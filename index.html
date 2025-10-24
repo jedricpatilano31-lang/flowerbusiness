@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jardinblanc-Flower Shop</title>
+     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="JARDIN.jpg" type="image/x-icon">
+</head>
+<body>
+    </head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">jardinblanc</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>JARDINBLANC FLOWER SHOP</h1>
+            <p>jardin blanc was born from a love for quiet beauty and the timeless joy of giving. Each arrangement is throughfully designed to bring a gentle smile and to make the elegance of finely crafted florals beautifully accessible.</p>
+            <a href="#services" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p class="about-tagline">Where timeless blooms meet quiet beauty.</p>
+            
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-number">1000+</div>
+                    <div class="stat-label">Clients Served</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">10+</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">95%</div>
+                    <div class="stat-label">Success Rate</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="services-content">
+            <h2>Our Services</h2>
+            
+            <div class="flower-grid">
+                <!-- Sunflowers -->
+                <div class="flower-card">
+                    <div class="flower-card-header">SUNFLOWERS</div>
+                    <div class="polaroid-frame">
+                        <img src="SUN FLOWER.jpg" alt="Sunflower Bouquet" class="polaroid-img">
+                    </div>
+                    <div class="flower-info">
+                        <div class="flower-price">₱ 450</div>
+                        <p class="flower-description">Bright and cheerful sunflower bouquet that brings sunshine to any occasion. Perfect for celebrations and lifting spirits.</p>
+                        <a href="#contact" class="order-btn">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Roses -->
+                <div class="flower-card">
+                    <div class="flower-card-header">ROSE FLOWERS</div>
+                    <div class="polaroid-frame">
+                        <img src="rose.jpg" alt="Red Rose Bouquet" class="polaroid-img">
+                    </div>
+                    <div class="flower-info">
+                        <div class="flower-price">₱ 650</div>
+                        <p class="flower-description">Classic red roses with baby's breath. The timeless symbol of love and romance, elegantly arranged for your special someone.</p>
+                        <a href="#contact" class="order-btn">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Tulips -->
+                <div class="flower-card">
+                    <div class="flower-card-header">TULIPS FLOWER</div>
+                    <div class="polaroid-frame">
+                        <img src="TULIPS.jpg" alt="Tulip Bouquet" class="polaroid-img">
+                    </div>
+                    <div class="flower-info">
+                        <div class="flower-price">₱ 550</div>
+                        <p class="flower-description">Delicate pink tulips with baby's breath. Elegant and sophisticated, perfect for expressing admiration and affection.</p>
+                        <a href="#contact" class="order-btn">Order Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact-content">
+            <h2>Contact Us</h2>
+            <p class="contact-intro">Ready to elevate your business? Reach out today for a free consultation.</p>
+            
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+
+            <div class="contact-info">
+                Email: <a href="mailto:hashirusensei@gmail.com">hashirusensei@gmail.com</a> | 
+                Phone: <a href="tel:096699976463">096699976463</a> | 
+                Address: Susano Road Novaliches QC
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 BizConsult Pro. All right reserved. | 
+        <a href="#">Privacy Policy</a> | 
+        <a href="#">Terms of Service</a></p>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Form submission
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
